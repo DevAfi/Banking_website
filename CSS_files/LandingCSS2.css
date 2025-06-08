@@ -1,0 +1,560 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.html a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.mainbody {
+    background-color:#efe9e1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/*      HEADER LOGO AND LINKS   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.mainheader {
+    background-color: #154D57;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 3px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 5px;
+}
+.topLogo img{
+    max-width: 250px;
+    max-height: 250px;
+    padding-left: 30px;
+    width: 150px;
+    height: auto;
+}
+.mainheader a {
+    border-radius: 2px;
+    padding: 2px;
+    text-align: center;
+}
+.headerRight a:hover {
+    background-color: #110836;
+    border-radius: 2px;
+    padding: 2px;
+}
+.headerRight a:active {
+    background-color: #2d1f64;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+/*            HERO IMAGE AND TEXT       ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.topHeroImage {
+    background-image: linear-gradient(#154D57, #EFE9E1);
+    margin-top: auto;
+    padding: 5px;
+    padding-top: 35px;
+    padding-bottom: 10%;
+}
+
+.topHeroWords {
+    text-align: center;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+.topHeroWords h1 {
+    font-weight: 700;
+    font-size: 55px;
+    color: white;
+}
+
+
+
+.buttonToOVR {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #E8D9CD;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: Verdana, Helvetica;
+}
+
+.buttonToOVR:hover {
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.084);
+}
+
+.buttonToOVR a {
+    color: black;
+    font-style: normal;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.buttonToOVR a:visited {
+    text-decoration: none;
+}
+
+.ServicesContainer {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+
+.servicesOverview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 27px;
+    padding-bottom: 55px;
+}
+
+.servicesOverview a {
+    background-color: #154D57;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #E8D9CD;
+}
+
+.servicesText {
+    text-align: center;
+    left: 25%;
+    padding-bottom: 25px;
+}
+
+.servicesText h2 {
+    font-size: 34px;
+}
+
+.servicesText h6 {
+    font-size: 15px;
+}
+
+.servicesOverview img, .servicesOverview2 img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 250px;
+    display: block;
+    height: auto;
+}
+
+.service1, .service2, .service3 {
+    width: 30%;
+    flex: 1 1 30%;
+}
+
+
+
+.service1 {
+    background-color: #154D57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 7px;
+    padding-top: 3px;
+
+}
+
+.service2 {
+    background-color: #154D57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 7px;
+    padding-top: 3px;
+
+}
+
+.service3 {
+    background-color: #154D57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 7px;
+    padding-top: 3px;
+
+}
+
+.servicesOverview img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5px;
+    height: 100%;
+}
+.service1 a {
+    display: block;
+    
+}
+
+.service1:hover {
+    border: 5px solid #154D57;
+}
+.service2:hover {
+    border: 5px solid #154D57;
+}
+.service3:hover {
+    border: 5px solid #154D57;
+}
+
+
+.servicesOverview a:hover {
+    background-color: #363f38ba;
+}
+
+.servicesOverview a:active {
+    background-color: #2f3831ba;
+}
+
+
+
+.servicesOverview2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-flow: wrap;
+    gap: 10px;
+    font-size: 27px;
+    padding-bottom: 55px;
+    width: 100%;
+}
+
+.servicesOverview2 a {
+    background-color: #154D57;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #E8D9CD;
+}
+
+.servicesOverview2 a:hover {
+    background-color: #363f38ba;
+}
+
+.servicesOverview2 a:active {
+    background-color: #2f3831ba;
+}
+
+.servicesOverview2 img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.Review {
+    padding: 0.6rem 0.5rem;
+    background-color: #e0d9d1;
+    border-radius: 5px;
+}
+.ReviewsMainContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.5rem 0.5rem;
+    gap: 1rem;
+}
+
+/*          INTRO TO THE BANK         ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.BankIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    padding-bottom: 85px;
+}
+
+
+
+
+.IntroHalvesContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 50px;
+}
+.IntroHalvesContainer h3 {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.IntroLeft {
+    width: 50%;
+    background-color: #154D57;
+    color: #EFE9E1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.IntroRight {
+    width: 50%;
+    background-color: #154D57;
+    color: #EFE9E1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+
+
+.OtherLinksContainer {
+    padding: 500px 0px;
+    text-align: center;
+}
+
+
+
+
+.AppLeft {
+    width: 50%;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.AppRight {
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.AppRight img {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 30%;
+}
+
+
+/*            FOOTER      ------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+
+.bottomfooter {
+    background: linear-gradient(#EFE9E1, #154D57);
+    padding-top: 30px;
+    text-align: center;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.FooterLeft, .pleasegoback, .legalInfo {
+    width: 33%;
+}
+
+.BackButton {
+    font-size: 35px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    border: 5px solid #154D57;
+    background-color: #154D57;
+    border-radius: 3px;
+    color: #EFE9E1;
+}
+
+.dontunderline {
+    text-decoration: none;
+    color: unset;
+}
+
+.BackButton:hover {
+    border: 5px transparent #154d57bf;
+    background-color: #154D57bf;
+    border-radius: 3px;
+    padding: 2px;
+    color: aliceblue;
+}
+
+.legalInfo {
+    text-align: right;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.FooterLeft {
+    font-size: 22px;
+    padding-top: 10%px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5px;
+    gap: 5px;
+}
+
+.FooterLeft a:hover {
+    background-color: rgba(119, 111, 143, 0.545);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+/* animation styles   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.Anim1 {
+    opacity: 0;
+}
+.Anim1.animate__animated {
+    opacity: 1;
+}
+
+.Anim2 {
+    opacity: 0;
+}
+.Anim2.animate__animated {
+    opacity: 1;
+    width: 50%;
+    background-color: #154D57;
+    color: #EFE9E1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.Anim3 {
+    opacity: 0;
+}
+.Anim3.animate__animated {
+    opacity: 1;
+    width: 50%;
+    background-color: #154D57;
+    color: #EFE9E1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+
+
+.Anim4 {
+    opacity: 0;
+}
+.Anim4.animate__animated {
+    opacity: 1;
+    width: 50%;
+    background-color: #154D57;
+    color: #EFE9E1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.Anim5 {
+    opacity: 0;
+}
+.Anim5.animate__animated {
+    opacity: 1;
+    width: 50%;
+    background-color: #154D57;
+    color: #EFE9E1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.AppContainer {
+    opacity: 0;
+}
+.AppContainer h3 {
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.AppContainer.animate__animated {
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #154D57;
+    color: #EFE9E1;
+    padding: 35px 5px;
+    border-radius: 10px;
+}
+
+.ButtonContainer {
+    opacity: 0;
+}
+.ButtonContainer.animate__animated {
+    opacity: 1;
+    padding: 35px;
+}
+
+@media screen and (max-width: 600px) {
+    .headerRight {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .headerRight a {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+
+    .servicesOverview {
+        justify-content: center;
+    }
+
+    .servicesOverview, .servicesOverview2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service1, .service2, .service3 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.html a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* header ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.mainbody {
+    background-color:#efe9e1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mainheader {
+    background-color: #154D57;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 3px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 5px;
+}
+.topLogo img{
+    max-width: 250px;
+    max-height: 250px;
+    padding-left: 30px;
+    width: 150px;
+    height: auto;
+}
+.mainheader a {
+    border-radius: 2px;
+    padding: 2px;
+    text-align: center;
+}
+.headerRight a:hover {
+    background-color: #110836;
+    border-radius: 2px;
+    padding: 2px;
+}
+.headerRight a:active {
+    background-color: #2d1f64;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+
+
+/* Main body of site ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.makeshifthero {
+    background-image: linear-gradient(#154D57, #EFE9E1);
+    margin-top: auto;
+    padding: 5px;
+    padding-top: 45px;
+    padding-bottom: 6%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.ServicesNavigationContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ServiceBox {
+    max-width: 100%;
+    max-height: auto;
+    width: 80rem;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 0;
+}
+
+.LeftSide {
+    background-color: #e3dcff;
+    font-size: 32px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    width: 450px;
+    height: 11rem;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}   
+    
+
+.RightSide {
+    background-image: linear-gradient(to right, #e3dcff 10%, #154D57 20%);
+    font-size: 1vw;
+    color: #EFE9E1;
+    padding-left: 200px;
+    padding-right: 5px;
+    width: 320px;
+    height: 11rem;
+    max-height: 100%;
+    line-height: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+
+/* Footer ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.bottomfooter {
+    background: linear-gradient(#EFE9E1, #154D57);
+    padding-top: 30px;
+    text-align: center;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.FooterLeft, .pleasegoback, .legalInfo {
+    width: 33%;
+}
+
+.BackButton {
+    font-size: 35px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    border: 5px solid #154D57;
+    background-color: #154D57;
+    border-radius: 3px;
+    color: #EFE9E1;
+}
+
+.dontunderline {
+    text-decoration: none;
+    color: unset;
+}
+
+.BackButton:hover {
+    border: 5px transparent #154d57bf;
+    background-color: #154D57bf;
+    border-radius: 3px;
+    padding: 2px;
+    color: aliceblue;
+}
+
+.legalInfo {
+    text-align: right;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.FooterLeft {
+    font-size: 22px;
+    padding-top: 10%px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5px;
+    gap: 5px;
+}
+
+.FooterLeft a:hover {
+    background-color: rgba(119, 111, 143, 0.545);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Animation */
+
+.ServiceBox {
+    opacity: 0;
+}
+
+.ServiceBox.animate__animated {
+    opacity: 1;
+    max-width: 100%;
+    max-height: auto;
+    width: 80rem;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 0;
+}
+
+.errorcontainer {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0 0 5px;
+}
+
+.errorborder {
+    border-color: red !important;
+}
+
+/* Media queries ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px) {
+    .headerRight {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .headerRight a {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+
+    .servicesOverview {
+        justify-content: center;
+    }
+
+    .servicesOverview, .servicesOverview2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service1, .service2, .service3 {
+        width: 100%;
+    }
+    .LeftSide {
+    background-image: linear-gradient(to right, #154D57 0%, #e3dcff 0%);
+    font-size: 1rem;
+    font-size: 0.9rem;
+    color: #154D57;
+    padding: 0px;
+    width: 5rem;
+    height: auto;
+    max-height: 100%;
+    line-height: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    text-align: center;
+    flex-grow: 1;
+    }
+    .RightSide {
+    background-image: linear-gradient(to right, #e3dcff 10%, #154D57 20%);
+    font-size: 1rem;
+    font-size: 0.9rem;
+    color: #EFE9E1;
+    padding-right: 5px;
+    width: 5rem;
+    height: auto;
+    max-height: 100%;
+    line-height: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    text-align: center;
+    flex-grow: 1;
+    }
+}
